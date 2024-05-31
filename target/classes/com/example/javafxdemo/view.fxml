@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.ToggleGroup?>
+<VBox alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.javafxdemo.Controller">
+
+    <TextArea fx:id="questionArea" editable="false" VBox.vgrow = "ALWAYS" focusTraversable="false" >
+        <font>
+            <Font size = "18.0"/>
+        </font>
+    </TextArea>
+
+
+    <HBox>
+        <RadioButton fx:id="answer1" HBox.hgrow="ALWAYS" maxWidth="Infinity">
+            <toggleGroup>
+                <ToggleGroup fx:id="answers"></ToggleGroup>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="answer2" HBox.hgrow="ALWAYS" maxWidth="Infinity" toggleGroup="$answers"/>
+        <RadioButton fx:id="answer3" HBox.hgrow="ALWAYS" maxWidth="Infinity" toggleGroup="$answers"/>
+        <RadioButton fx:id="answer4" HBox.hgrow="ALWAYS" maxWidth="Infinity" toggleGroup="$answers"/>
+        <Button text="Answer"/>
+        <VBox.margin>
+            <Insets top = "20.0"/>
+        </VBox.margin>
+    </HBox>
+
+    <padding>
+        <Insets bottom = "20.0" top = "20.0" left = "20.0" right = "20.0" />
+    </padding>
+
+</VBox>
