@@ -27,7 +27,7 @@
         <RadioButton fx:id="answer2" HBox.hgrow="ALWAYS" maxWidth="Infinity" toggleGroup="$answers"/>
         <RadioButton fx:id="answer3" HBox.hgrow="ALWAYS" maxWidth="Infinity" toggleGroup="$answers"/>
         <RadioButton fx:id="answer4" HBox.hgrow="ALWAYS" maxWidth="Infinity" toggleGroup="$answers"/>
-        <Button text="Answer"/>
+        <Button text="Answer" onAction="#tryToAnswer"/>
         <VBox.margin>
             <Insets top = "20.0"/>
         </VBox.margin>
